@@ -1,0 +1,22 @@
+# GAIA OS
+gaia;script;rancid -t gaia
+gaia;login;glogin
+gaia;module;gaia
+gaia;inloop;gaia::inloop
+gaia;command;gaia::DefaultParsing;view_config
+gaia;command;gaia::GetConf;show configuration
+
+# f5 big-ip v15
+bigip;script;rancid -t bigip
+bigip;login;f5login
+bigip;module;bigip
+bigip;inloop;bigip::inloop
+bigip;command;bigip::ShowVersion;show /sys version
+bigip;command;bigip::ShowHardware;show /sys hardware
+bigip;command;bigip::ShowLicense;show /sys license
+bigip;command;bigip::ShowRunCm;show running-config cm
+bigip;command;bigip::ShowRunLtm;show running-config ltm
+bigip;command;bigip::ShowRunNet;show running-config net
+bigip;command;bigip::ShowRouteStatic;show /net route static
+#bigip;command;bigip::WriteTerm;quit
+
